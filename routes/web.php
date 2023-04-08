@@ -24,7 +24,7 @@ Route::get('user', function(){
     return 'hi User';
     })->middleware('role:user');
 
-    
+    //???
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
